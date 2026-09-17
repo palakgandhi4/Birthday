@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>For Namee 🎀</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #ffe6ef;
+            color: #63384a;
+            text-align: center;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 25px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 8px 25px #d9aabb;
+        }
+
+        h1 {
+            color: #d94f7c;
+            font-size: 35px;
+        }
+
+        h2 {
+            color: #d94f7c;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        button {
+            background: #d94f7c;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c83d6b;
+        }
+
+        /* 4 PHOTO GRID */
+
+        .photos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .photos img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .note {
+            background: #fff0f5;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 12px 0;
+        }
+
+        .emoji {
+            font-size: 50px;
+        }
+
+        @media(max-width:600px) {
+
+            .photos img {
+                height: 180px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="page1">
+
+    <div class="card">
+
+        <div class="emoji">🎀💌✨</div>
+
+        <h1>A Little Surprise For You...</h1>
+
+        <p>
+            Made specially for my favourite bhulakkad. 😂❤️
+        </p>
+
+        <button onclick="nextPage(2)">
+            Tap to Enter ✨
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 2 : PHOTOS -->
+
+<div class="page" id="page2">
+
+    <div class="card">
+
+        <h1>Happiest Birthday Namee! 🎂❤️</h1>
+
+        <p>
+            A few memories of us... 🥹🫶🏻
+        </p>
+
+
+        <div class="photos">
+
+            <img src="photo1.jpeg">
+
+            <img src="photo2.jpeg">
+
+            <img src="photo3.jpeg">
+
+            <img src="photo4.jpeg">
+
+        </div>
+
+
+        <button onclick="nextPage(3)">
+            Next → 💗
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 3 : OUR STORY -->
+
+<div class="page" id="page3">
+
+    <div class="card">
+
+        <h2>Our Story 🌷</h2>
+
+        <p>
+            We've been together since school,
+            and you've been a part of so many
+            little and big moments of my life. ❤️
+        </p>
+
+        <p>
+            Whenever I have a problem,
+            you're one of the first people
+            I talk to.
+        </p>
+
+        <p>
+            You listen, give me suggestions,
+            find solutions and somehow
+            make things feel better. 🥹🫂
+        </p>
+
+        <button onclick="nextPage(4)">
+            Next → ✨
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 4 : BHULAKKAD -->
+
+<div class="page" id="page4">
+
+    <div class="card">
+
+        <div class="emoji">😂❤️</div>
+
+        <h2>For My Bhulakkad</h2>
+
+        <p>
+            You forget so many things...
+            but I'll make sure you never forget
+            how special our friendship is. 🥹
+        </p>
+
+        <div class="note">
+            Thank you for always being there for me. ❤️
+        </div>
+
+        <div class="note">
+            Thank you for listening to all my nonsense. 😂
+        </div>
+
+        <div class="note">
+            Thank you for guiding me whenever I need you. 🫶🏻
+        </div>
+
+        <button onclick="nextPage(5)">
+            One More → 💌
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 5 : DISTANCE -->
+
+<div class="page" id="page5">
+
+    <div class="card">
+
+        <h2>Different Cities, Same Bond 🫂</h2>
+
+        <p>
+            Pune and Baramati may be different cities,
+            but distance hasn't changed our bond. ❤️
+        </p>
+
+        <p>
+            We've grown up, our lives have changed,
+            but somehow our friendship still feels
+            the same.
+        </p>
+
+        <button onclick="nextPage(6)">
+            Final Surprise → 🎂
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 6 : FINAL -->
+
+<div class="page" id="page6">
+
+    <div class="card">
+
+        <div class="emoji">🎂🥹❤️</div>
+
+        <h1>Happy Birthday Namee!</h1>
+
+        <p>
+            I know you're strong and I know
+            good things will happen for you. ✨
+        </p>
+
+        <p>
+            I hope this year brings you
+            lots of happiness, success,
+            beautiful memories and everything
+            you've been wishing for.
+        </p>
+
+        <p>
+            Have the BEST birthday ever! 🥳🎀
+        </p>
+
+        <h2>
+            Luvv uu, bhulakkad 😂🫶🏻❤️
+        </h2>
+
+        <p>
+            🌷 Forever grateful for our friendship 🌷
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+function nextPage(number) {
+
+    document.querySelector(".active").classList.remove("active");
+
+    document.getElementById("page" + number).classList.add("active");
+
+}
+
+</script>
+
+
+</body>
+</html>
